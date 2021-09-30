@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
 
-import { rangeConvert } from './range-converter';
+import { rangeConvert, addUnit } from './range-converter';
 
 export const rangeRouter: Router = express.Router();
 
@@ -16,4 +16,10 @@ rangeRouter.get('/:from/:to/:value', async (req, res) => {
       convert_to: to
     })
   );
+});
+
+rangeRouter.post('/', async (req, res) => {
+  const { unit, coef } = req.body;
+  await addUnit(unit, coef);
+  return res.sendStatus(200);
 });
