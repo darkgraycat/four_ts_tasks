@@ -8,5 +8,7 @@
 
 ## Range converter API
 Convert **value** **from** one unit **to** another `GET /range/:from/:to/:value`
+
 Add new **unit** with **coef** to meter `POST /range` payload: `{"unit": "string", "coef": "string"}`
+
 
