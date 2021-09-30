@@ -2,11 +2,20 @@ import { promises as fs } from 'fs';
 
 const file_path = __dirname + '/table.json';
 
+// export const units = (
+//   async () => JSON.parse(
+//     await fs.readFile(file_path, 'utf-8')
+//   )
+// )();
+
 export const units = (
-  async () => JSON.parse(
-    await fs.readFile(file_path, 'utf-8')
-  )
+  async () => {
+    console.log('fetching');
+    return JSON.parse(await fs.readFile(file_path, 'utf-8'));
+  }
 )();
+
+
 
 export const add = async (unit: string, coef: number) => {
   const table = await units;
