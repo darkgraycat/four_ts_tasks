@@ -1,14 +1,15 @@
 import express, { Application } from 'express';
-import {
-  rangeRouter
-} from './routers';
+
+import { router as rangeRouter } from './range-converter/router';
+import { router as sortRouter } from './sorter/router';
 
 const app: Application = express();
 
 app.use(express.json());
 
-app.use('/range', rangeRouter);
+// app.use('/range', rangeRouter);
+app.use('/sort', sortRouter);
 
-app.all('*', (req, res) => res.sendStatus(400));
+app.all('*', (_, res) => res.sendStatus(400));
 
 export default app;

@@ -1,14 +1,14 @@
 import express, { Router } from 'express';
 
-import { rangeConvert, addUnit } from './range-converter';
+import { convert } from './convert';
+import { add } from './units';
 
-export const rangeRouter: Router = express.Router();
+export const router: Router = express.Router();
 
-rangeRouter.get('/:from/:to/:value', async (req, res) => {
+router.get('/:from/:to/:value', async (req, res) => {
   const { from, to, value } = req.params;
-
   return res.send(
-    await rangeConvert({
+    await convert({
       distance: {
         unit: from,
         value: Number.parseFloat(value)
@@ -18,8 +18,8 @@ rangeRouter.get('/:from/:to/:value', async (req, res) => {
   );
 });
 
-rangeRouter.post('/', async (req, res) => {
+router.post('/', async (req, res) => {
   const { unit, coef } = req.body;
-  await addUnit(unit, coef);
+  await add(unit, coef);
   return res.sendStatus(200);
 });

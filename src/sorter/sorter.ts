@@ -1,27 +1,22 @@
-import { Collection } from './collection';
-import { Condition } from './condition';
-import { SorterDto } from './sorter.dto';
+import { getMethod } from './methods/get-method';
+import { Method } from './methods/method';
 
 export class Sorter {
 
-  private collection: Collection;
-  private condition: Condition;
+  private static instance: Sorter;
 
-  constructor(dto: SorterDto) {
-    this.collection = new Collection(dto.data);
-    this.condition = new Condition(dto.condition);
-    this.init();
+  private constructor() { }
+
+  public static getInstance() {
+    return this.instance || (this.instance = new Sorter());
   }
 
-  private init() {
-    console.log(this.collection);
-    console.log(this.condition);
+  public sort(data: Array<Object>, condition: Object): Array<Object> {
+    for (let key in condition) {
+      getMethod(key, condition[key])
+        .execute(data);
+    }
+    console.log('result', data);
+    return data;
   }
-
-  // public sort(): Collection {
-  //   const methods = this.condition.getMethods();
-  //   const data = this.collection.getData();
-  //   // methods.map(method => { });
-  // }
-
 }

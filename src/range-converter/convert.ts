@@ -1,7 +1,7 @@
 import { IParams, IRange } from './interfaces';
 import { units } from './units';
 
-const convert = async (params: IParams): Promise<IRange> => {
+export const convert = async (params: IParams): Promise<IRange> => {
   const { value, unit } = params.distance;
   const table = await units;
 
@@ -13,5 +13,3 @@ const convert = async (params: IParams): Promise<IRange> => {
     value: result
   };
 };
-
-export default convert;

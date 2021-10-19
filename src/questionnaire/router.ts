@@ -1,0 +1,7 @@
+import express, { Router } from 'express';
+
+export const router: Router = express.Router();
+
+router.post('/', async (req, res) => {
+  return res.send(null);
+});
