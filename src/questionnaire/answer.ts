@@ -3,14 +3,14 @@ import { Question } from './question';
 export class Answer {
   constructor(
     private text: string,
-    private next: Question
+    private question: Question | null
   ) { }
 
-  getText(): string {
-    return this.text;
+  public show(): string {
+    return `[${this.text}]`;
   }
 
-  getNextQuestion(): Question {
-    return this.next;
+  public next(): Question | null {
+    return this.question;
   }
 }

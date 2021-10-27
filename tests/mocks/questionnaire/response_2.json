@@ -1,0 +1,140 @@
+{
+  "id": "quiz_2",
+  "question": {
+    "text": "What is your main skill?:",
+    "answers": [
+      {
+        "text": "Strength",
+        "question": {
+          "text": "Choose your class:",
+          "answers": [
+            {
+              "text": "Barbarian",
+              "question": {
+                "text": "Choose your weapon:",
+                "answers": [
+                  {
+                    "text": "Axe",
+                    "question": null
+                  },
+                  {
+                    "text": "Claymore",
+                    "question": null
+                  },
+                  {
+                    "text": "Mace",
+                    "question": null
+                  }
+                ]
+              }
+            },
+            {
+              "text": "Paladin",
+              "question": {
+                "text": "Choose your weapon:",
+                "answers": [
+                  {
+                    "text": "Sword",
+                    "question": null
+                  },
+                  {
+                    "text": "Hammer",
+                    "question": null
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "text": "Agility",
+        "question": {
+          "text": "Choose your class:",
+          "answers": [
+            {
+              "text": "Archer",
+              "question": {
+                "text": "Choose your weapon:",
+                "answers": [
+                  {
+                    "text": "Bow",
+                    "question": null
+                  },
+                  {
+                    "text": "Arbalet",
+                    "question": null
+                  }
+                ]
+              }
+            },
+            {
+              "text": "Rogue",
+              "question": {
+                "text": "Choose your weapon:",
+                "answers": [
+                  {
+                    "text": "Bow",
+                    "question": null
+                  },
+                  {
+                    "text": "Knife",
+                    "question": null
+                  },
+                  {
+                    "text": "Sword",
+                    "question": null
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "text": "Intelligence",
+        "question": {
+          "text": "Choose your class:",
+          "answers": [
+            {
+              "text": "Mage",
+              "question": {
+                "text": "Choose your weapon:",
+                "answers": [
+                  {
+                    "text": "Fireball",
+                    "question": null
+                  },
+                  {
+                    "text": "Freeze",
+                    "question": null
+                  },
+                  {
+                    "text": "Earthroots",
+                    "question": null
+                  }
+                ]
+              }
+            },
+            {
+              "text": "Wizard",
+              "question": {
+                "text": "Choose your weapon:",
+                "answers": [
+                  {
+                    "text": "Curse",
+                    "question": null
+                  },
+                  {
+                    "text": "Summon",
+                    "question": null
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

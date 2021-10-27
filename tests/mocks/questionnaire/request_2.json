@@ -1,0 +1,55 @@
+{
+  "What is your main skill?:": {
+    "Strength": {
+      "Choose your class:": {
+        "Barbarian": {
+          "Choose your weapon:": {
+            "Axe": null,
+            "Claymore": null,
+            "Mace": null
+          }
+        },
+        "Paladin": {
+          "Choose your weapon:": {
+            "Sword": null,
+            "Hammer": null
+          }
+        }
+      }
+    },
+    "Agility": {
+      "Choose your class:": {
+        "Archer": {
+          "Choose your weapon:": {
+            "Bow": null,
+            "Arbalet": null
+          }
+        },
+        "Rogue": {
+          "Choose your weapon:": {
+            "Bow": null,
+            "Knife": null,
+            "Sword": null
+          }
+        }
+      }
+    },
+    "Intelligence": {
+      "Choose your class:": {
+        "Mage": {
+          "Choose your weapon:": {
+            "Fireball": null,
+            "Freeze": null,
+            "Earthroots": null
+          }
+        },
+        "Wizard": {
+          "Choose your weapon:": {
+            "Curse": null,
+            "Summon": null
+          }
+        }
+      }
+    }
+  }
+}
